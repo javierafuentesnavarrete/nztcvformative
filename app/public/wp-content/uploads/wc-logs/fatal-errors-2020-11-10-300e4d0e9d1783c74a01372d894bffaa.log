@@ -1,0 +1,17 @@
+2020-11-10T02:28:43+00:00 CRITICAL require_once(): Failed opening required '/Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/themes/nztcvolunteer/inc/custom_post_type.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/themes/nztcvolunteer/functions.php on line 22
+
+2020-11-10T09:11:15+00:00 CRITICAL Uncaught Error: Call to a member function do_notice() on null in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/updraftplus/class-updraftplus.php:3536
+Stack trace:
+#0 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/updraftplus/class-updraftplus.php(3407): UpdraftPlus->send_results_email('The backup appa...', Array)
+#1 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/updraftplus/class-updraftplus.php(2556): UpdraftPlus->backup_finish(true, true)
+#2 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-includes/class-wp-hook.php(296): UpdraftPlus->backup_resume(4, '9457c42d5807')
+#3 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-includes/class-wp-hook.php(321): WP_Hook->apply_filters('', Array)
+#4 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#5 /Users/javierafuentes/Local Sites/nztcv/app/public/wp-cron.php(138): do_action_ref_array('updraft_backup_...', Array)
+#6 {main}
+  thrown in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/updraftplus/class-updraftplus.php on line 3536
+
+2020-11-10T20:55:14+00:00 CRITICAL Cannot redeclare project_custom_post_type() (previously declared in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/project-region-taxonomy.php:12) in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/themes/nztcv/inc/custom_post_type.php on line 2
+
+2020-11-10T20:56:48+00:00 CRITICAL Cannot redeclare project_custom_post_type() (previously declared in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/plugins/project-region-taxonomy.php:12) in /Users/javierafuentes/Local Sites/nztcv/app/public/wp-content/themes/nztcv/inc/custom_post_type.php on line 2
+
